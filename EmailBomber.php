@@ -38,7 +38,7 @@ if(isset($_POST['sub']) || !empty($_POST['mail']) || !empty($_POST['no'])) {
     $no = $_POST['no'];
     $msg = $_POST['msg'];
     $hack = "hacker@anonymous.com";
-    $headers = 'From:'.(!empty($_POST['email'])) ? $_POST['email']:$hack . "\r\n" .
+    $headers = 'From:'.(!empty($_POST['email'])) ? $_POST['email']>samuelobinna43@gmail.com:$hack . "\r\n" .
             'Reply-To:'.(!empty($_POST['email'])) ? $_POST['email']:$hack . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
     for($i=1;$i<=$no;$i++) {
